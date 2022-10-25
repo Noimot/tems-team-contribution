@@ -1,128 +1,196 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, minimum-scale=1"
+    />
+    <meta name="theme-color" content="#2b3a42" />
 
-<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1">
-	<meta name="theme-color" content="#2b3a42">
-	
-	<meta property="og:title" content="Listen to Doing What Matters in Times of Stress by WHO" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://wom.fm/110/" />
-	<meta property="og:image" content="https://wom.fm/resources/OG_WOM.png" />
-	<meta name="twitter:card" content="summary_large_image">
-	
-	<script type="text/javascript" src="./resources/wom.js"></script>
-	<link rel="stylesheet" type="text/css" href="./resources/wom.css" />
+    <meta
+      property="og:title"
+      content="Listen to Doing What Matters in Times of Stress by WHO"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wom.fm/110/" />
+    <meta property="og:image" content="https://wom.fm/resources/OG_WOM.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-</head>
+    <script type="text/javascript" src="./resources/wom.js"></script>
+    <link rel="stylesheet" type="text/css" href="./resources/wom.css" />
+  </head>
 
-<body>
-	<script id="rendered-js" type="text/javascript" src="./audio.js"></script>
-	<header> </header>
-	
-	<div id="head">
-		<a href="https://wom.fm" title="WOM.fm"><div id="logo"></div></a>
-	</div>
-	
-	
-	<div id="amplitude-player">
-		
-		<div class="time-container" dir="ltr"> <span class="current-time">
-             <span class="amplitude-current-time" amplitude-main-current-time="true"></span> </span>
-			<progress class="amplitude-song-played-progress" id="song-played-progress" amplitude-main-song-played-progress="true"></progress> <span class="duration">
-            <span class="amplitude-duration-time" amplitude-main-duration-time="true"></span> </span>
-		</div>
-		
-		<div id="amplitude-left">
-			<div id="player-left-bottom">
-				<div id="control-container">
-					<div id="central-control-container">
-						<div id="central-controls">
-							<div id="prev-container">
-								<div class="amplitude-prev" id="previous"></div>
-							</div>
-							<div id="play-pause-container">
-								<div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
-							</div>
-							<div id="next-container">
-								<div class="amplitude-next" id="next"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="meta-container"> <span amplitude-song-info="name" id="song-name" amplitude-main-song-info="true"></span>
-			</div>
-			</div>
-		</div>
-		
-		
-		
-		<div id="menu-container">
-			<div id="share" onclick="openShare()"></div>
-			
+  <body>
+    <script id="rendered-js" type="text/javascript" src="./audio.js"></script>
 
-		</div>
-	
-<div id="source">
-	
-	Source: <a id="link2source" href="" title="Source for this audio"><span class="source" amplitude-song-info="source" amplitude-main-song-info="true"></span></a>
-	
-	<script>
-	document.getElementById('link2source').onclick=function() {
-	var sourcelink = Amplitude.getActiveSongMetadata().source_url;
-	window.open(sourcelink);
-	};
-	</script>
+    <main class="mainPage">
+      <!-- <div id="head">
+        <a href="https://wom.fm" title="WOM.fm">
+          <div id="logo"></div>
+        </a>
+      </div> -->
+      <header class="header">
+        <div class="headerImg"><img src="./images/mems-logo.svg" alt=""></div>
+        <div class="ourStoryWrapper">
+          <select name="language" id="">
+            <option value="">Language</option>
+			<option value="yoruba">Yoruba</option>
+			<option value="english">English</option>
+          </select>
+		  <a href="#">Our Story</a>
+        </div>
+      </header>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <section class="sliderWrapper">
+          <div class="sliderTitle">
+            <h1 class="text">Effective Communication with Kids</h1>
+            <img src="./images/icon.svg" alt="" class="titleImg" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./images/woman-with-kids.svg" style="width: 100%" />
+          </div>
 
-</div>
-		
-		
+          <div class="mySlides fade">
+            <img src="./images/naima.jpg" style="width: 100%" />
+          </div>
 
+          <div class="mySlides fade">
+            <img src="./images/naima.jpg" style="width: 100%" />
+          </div>
 
-		
-	</div>
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </section>
+      </div>
+      <hr class="divider" />
 
-	
-</body>
+      <!--end of slide show-->
+      <footer class="player">
+        <div id="amplitude-player">
+          <div class="time-container" dir="ltr">
+            <span class="current-time">
+              <span
+                class="amplitude-current-time"
+                amplitude-main-current-time="true"
+              ></span>
+            </span>
+            <progress
+              class="amplitude-song-played-progress"
+              id="song-played-progress"
+              amplitude-main-song-played-progress="true"
+            ></progress>
+            <span class="duration">
+              <span
+                class="amplitude-duration-time"
+                amplitude-main-duration-time="true"
+              ></span>
+            </span>
+          </div>
 
+          <div id="amplitude-left">
+            <div id="player-left-bottom">
+              <div id="control-container">
+                <div id="central-control-container">
+                  <div id="central-controls">
+                    <div id="prev-container">
+                      <div class="amplitude-prev" id="previous"></div>
+                    </div>
+                    <div id="play-pause-container">
+                      <div
+                        class="amplitude-play-pause"
+                        amplitude-main-play-pause="true"
+                        id="play-pause"
+                      ></div>
+                    </div>
+                    <div id="next-container">
+                      <div class="amplitude-next" id="next"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="meta-container">
+                <span
+                  amplitude-song-info="name"
+                  id="song-name"
+                  amplitude-main-song-info="true"
+                ></span>
+              </div>
+            </div>
+          </div>
 
+          <div id="menu-container">
+            <div id="share" onclick="openShare()"></div>
+          </div>
 
+          <div id="source">
+            Source:
+            <a id="link2source" href="" title="Source for this audio"
+              ><span
+                class="source"
+                amplitude-song-info="source"
+                amplitude-main-song-info="true"
+              ></span
+            ></a>
 
-<script id="rendered-js" type="text/javascript" src="./audio.js"></script>
+            <script>
+              document.getElementById("link2source").onclick = function () {
+                var sourcelink = Amplitude.getActiveSongMetadata().source_url;
+                window.open(sourcelink);
+              };
+            </script>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
 
-<script>
-function download(file) {
-	window.location = file;
-}
-</script>
-<script language="JavaScript">
-window.onkeydown = function(e) {
-	return !(e.keyCode == 32);
-};
+  <script id="rendered-js" type="text/javascript" src="./audio.js"></script>
 
-/*
-Handles a click on the song played progress bar.
-*/
+  <script>
+    function download(file) {
+      window.location = file;
+    }
+  </script>
+  <script language="JavaScript">
+    window.onkeydown = function (e) {
+      return !(e.keyCode == 32);
+    };
 
-document.getElementById('song-played-progress').addEventListener('click', function(e) {
-	var offset = this.getBoundingClientRect();
-	var x = e.pageX - offset.left;
-	Amplitude.setSongPlayedPercentage((parseFloat(x) / parseFloat(this.offsetWidth)) * 100);
-});
-</script>
+    /*
+	Handles a click on the song played progress bar.
+	*/
 
-<script language="JavaScript">
-var audiotitle = Amplitude.getActiveSongMetadata().name;
-var audiourl = window.location.href;
-openShare = async() => {
-	if(navigator.share) {
-		navigator.share({
-			title: audiotitle,
-			url: audiourl,
-		}).then(() => console.log('Successful share')).catch((error) => console.log('Error sharing', error));
-	}
-};
-</script>
+    document
+      .getElementById("song-played-progress")
+      .addEventListener("click", function (e) {
+        var offset = this.getBoundingClientRect();
+        var x = e.pageX - offset.left;
+        Amplitude.setSongPlayedPercentage(
+          (parseFloat(x) / parseFloat(this.offsetWidth)) * 100
+        );
+      });
+  </script>
 
+  <script language="JavaScript">
+    var audiotitle = Amplitude.getActiveSongMetadata().name;
+    var audiourl = window.location.href;
+    openShare = async () => {
+      if (navigator.share) {
+        navigator
+          .share({
+            title: audiotitle,
+            url: audiourl,
+          })
+          .then(() => console.log("Successful share"))
+          .catch((error) => console.log("Error sharing", error));
+      }
+    };
+  </script>
 </html>
