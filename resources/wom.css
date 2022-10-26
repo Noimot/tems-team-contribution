@@ -81,7 +81,7 @@ header.header {
 
 /* Slideshow container */
 .slideshow-container {
-  height: calc(100vh - 212px);
+  height: calc(100vh - 250px);
   margin: auto;
 }
 
@@ -99,16 +99,16 @@ header.header {
   justify-content: center;
   gap: 15px;
   height: 70px;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .text {
   text-align: center;
   font-family: "Campton", sans-serif;
-  font-weight: 500;
   font-size: 30px;
   line-height: 150%;
-  color: #1d272c;
+  letter-spacing: 3px;
+  /* color: #1d272c; */
 }
 
 /* Hide the images by default */
@@ -121,7 +121,7 @@ header.header {
 }
 
 .mySlides img {
-  height: 80%;
+  height: 70%;
   width: 80%;
   object-fit: contain;
   border-radius: 4px;
@@ -138,7 +138,7 @@ header.header {
   display: inline-block;
   transition: background-color 0.6s ease;
   position: relative;
-  bottom: 40px;
+  bottom: 30px;
 }
 
 .active,
@@ -211,18 +211,21 @@ header.header {
 /* Player Styles */
 
 div#amplitude-player {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  background-color: #1d272c;
-  padding: 2rem 10rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 10rem;
+	background-color: #1d272c;
 }
 
 div#share {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background: url(../images/share.png) no-repeat;
+  background: url('../images/share.png') no-repeat;
   background-size: contain;
 }
 
