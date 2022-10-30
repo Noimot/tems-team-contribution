@@ -14,7 +14,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
 }
 html {
@@ -120,7 +120,6 @@ header.header {
   height: 100%;
   margin: 0 auto;
   border-radius: 4px;
-
 }
 
 .mySlides img {
@@ -170,88 +169,36 @@ header.header {
   margin-top: 40px;
   background-color: rgba(149, 156, 160, 1);
 }
-#source{
+#source {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.source{
+.source {
   margin-left: 5px;
   color: #bdd4de;
-
-}
-
-@media only screen and (max-width: 980px) {
-  .text {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (max-width: 680px) {
-  .text {
-    font-size: 20px;
-  }
-  img.titleImg {
-    height: 60px;
-  }
-  .headerImg {
-    width: 150px;
-  }
-
-  .headerImg > img {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .text {
-    font-size: 18px;
-  }
-  img.titleImg {
-    height: 40px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .text {
-    font-size: 14px;
-  }
-  .headerImg {
-    width: 100px;
-  }
- 
-  .ourStoryWrapper select {
-	font-size: 14px;
-  }
-  
-  .ourStoryWrapper > a {
-	font-size: 14px;
-	padding-left: 10px;
-	padding-right: 10px;
-  }
-  
 }
 
 /* Player Styles */
 
 div#amplitude-player {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	padding: 2rem;
-	background-color: #1d272c;
-	align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #1d272c;
+  align-items: center;
 }
 
 div#share {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background: url('../images/share.png') no-repeat;
+  background: url("../images/share.png") no-repeat;
   background-size: contain;
 }
 
@@ -369,13 +316,22 @@ input[type="range"].amplitude-volume-slider::-ms-track {
   border-width: 15px 0;
 }
 
-div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls {
+div#amplitude-left
+  div#player-left-bottom
+  div#control-container
+  div#central-control-container
+  div#central-controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#previous {
+div#amplitude-left
+  div#player-left-bottom
+  div#control-container
+  div#central-control-container
+  div#central-controls
+  div#previous {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -384,24 +340,44 @@ div#amplitude-left div#player-left-bottom div#control-container div#central-cont
   background-size: contain;
 }
 
-div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#play-pause {
+div#amplitude-left
+  div#player-left-bottom
+  div#control-container
+  div#central-control-container
+  div#central-controls
+  div#play-pause {
   width: 40px;
   height: 40px;
   cursor: pointer;
   margin: 0 10px;
 }
 
-div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#play-pause.amplitude-paused {
+div#amplitude-left
+  div#player-left-bottom
+  div#control-container
+  div#central-control-container
+  div#central-controls
+  div#play-pause.amplitude-paused {
   background: url("../images/play.png") no-repeat;
   background-size: contain;
 }
 
-div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#play-pause.amplitude-playing {
+div#amplitude-left
+  div#player-left-bottom
+  div#control-container
+  div#central-control-container
+  div#central-controls
+  div#play-pause.amplitude-playing {
   background: url("../images/pause-circle.png") no-repeat;
   background-size: contain;
 }
 
-div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#next {
+div#amplitude-left
+  div#player-left-bottom
+  div#control-container
+  div#central-control-container
+  div#central-controls
+  div#next {
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -430,16 +406,31 @@ div#amplitude-left div#player-left-bottom div#control-container div#central-cont
     width: 250px;
   }
 
-  div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#previous {
+  div#amplitude-left
+    div#player-left-bottom
+    div#control-container
+    div#central-control-container
+    div#central-controls
+    div#previous {
     width: 50px;
     height: 50px;
   }
 
-  div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#play-pause {
+  div#amplitude-left
+    div#player-left-bottom
+    div#control-container
+    div#central-control-container
+    div#central-controls
+    div#play-pause {
     width: 60px;
     height: 60px;
   }
-  div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#next {
+  div#amplitude-left
+    div#player-left-bottom
+    div#control-container
+    div#central-control-container
+    div#central-controls
+    div#next {
     width: 50px;
     height: 50px;
   }
@@ -468,3 +459,184 @@ div#amplitude-left div#player-left-bottom div#control-container div#central-cont
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
 }
+
+/* my story page */
+section .heading {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Campton";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 150%;
+  color: #2b3a42;
+  padding: 30px;
+}
+
+.my-story-content {
+  padding-left: 10%;
+  display: flex;
+  position: relative;;
+  gap: 10px;
+}
+
+section .aside1 {
+	flex: 0.5;
+  }
+
+  section .aside2 {
+	flex: 0.5;
+  }
+
+section p {
+  font-family: "Campton-light";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2b3a42;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer.footer {
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Campton";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 150%;
+  color: #2b3a42;
+}
+
+.imgWrapper {
+	display: flex;
+}
+
+.imgContainer {
+	width: 100%;
+	height: 100%;
+}
+
+.imgContainer img.img {
+width: 100%;
+height: 80%;
+}
+
+.abs {
+	position: absolute;
+	right: 18%;
+}
+
+.imgDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+
+@media only screen and (max-width: 980px) {
+	.text {
+	  font-size: 25px;
+	}
+  }
+
+  @media only screen and (max-width: 900px) {
+	section .aside p {
+		font-size: 16px;
+	  }
+	  
+	  .paragraph {
+		gap: 20px;
+	  }
+	  section .heading {
+		font-size: 30px;
+	  }
+	  footer.footer {
+		font-size: 30px;
+	  }
+	  
+  }
+
+  @media only screen and (max-width: 800px) {
+	.hidden {
+		display:none;
+	}
+	section .aside1 {
+		flex: 0.7;
+	  }
+
+	  section .aside2 {
+		flex: 0.3;
+	  }
+	  .abs {
+		right: 22%;
+	  }
+  }
+  
+  @media only screen and (max-width: 680px) {
+	.text {
+	  font-size: 20px;
+	}
+	img.titleImg {
+	  height: 60px;
+	}
+	.headerImg {
+	  max-width: 150px;
+	  width: 100%;
+	}
+  
+	.headerImg  img {
+	  width: 100%;
+	}
+	section .heading {
+		font-size: 20px;
+	  }
+	  footer.footer {
+		font-size: 20px;
+	  }
+	  
+  }
+  
+  @media only screen and (max-width: 600px) {
+	.text {
+	  font-size: 18px;
+	}
+	img.titleImg {
+	  height: 40px;
+	}
+  }
+  
+  @media only screen and (max-width: 480px) {
+	.text {
+	  font-size: 14px;
+	}
+	.headerImg {
+	  width: 100px;
+	}
+  
+	.ourStoryWrapper select {
+	  font-size: 14px;
+	}
+  
+	.ourStoryWrapper > a {
+	  font-size: 14px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	}
+	  footer.footer {
+		font-size: 16px;
+	  }
+  }
+  
+
+
