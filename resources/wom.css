@@ -88,9 +88,8 @@ header.header {
 }
 
 .sliderWrapper {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
-  /* background-color: green; */
   margin: 0 auto;
   height: 80%;
 }
@@ -100,8 +99,8 @@ header.header {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  height: 70px;
-  margin: 20px 0;
+  height: 60px;
+  margin: 15px 0;
 }
 
 .text {
@@ -120,11 +119,13 @@ header.header {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  border-radius: 4px;
+
 }
 
 .mySlides img {
-  height: 70%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   object-fit: contain;
   border-radius: 4px;
 }
@@ -140,7 +141,7 @@ header.header {
   display: inline-block;
   transition: background-color 0.6s ease;
   position: relative;
-  bottom: 30px;
+  top: 10px;
 }
 
 .active,
@@ -166,7 +167,7 @@ header.header {
 .divider {
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-top: 40px;
   background-color: rgba(149, 156, 160, 1);
 }
 #source{
@@ -219,6 +220,17 @@ header.header {
   .headerImg {
     width: 100px;
   }
+ 
+  .ourStoryWrapper select {
+	font-size: 14px;
+  }
+  
+  .ourStoryWrapper > a {
+	font-size: 14px;
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+  
 }
 
 /* Player Styles */
@@ -230,8 +242,9 @@ div#amplitude-player {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	padding: 2rem 10rem;
+	padding: 2rem;
 	background-color: #1d272c;
+	align-items: center;
 }
 
 div#share {

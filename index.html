@@ -31,14 +31,14 @@
         </a>
       </div> -->
       <header class="header">
-        <div class="headerImg"><img src="./images/mems-logo.svg" alt=""></div>
+        <div class="headerImg"><img src="./images/mems-logo.svg" alt="" /></div>
         <div class="ourStoryWrapper">
           <select name="language" id="">
             <option value="">Language</option>
-			<option value="yoruba">Yoruba</option>
-			<option value="english">English</option>
+            <option value="yoruba">Yoruba</option>
+            <option value="english">English</option>
           </select>
-		  <a href="#">Our Story</a>
+          <a href="#">Our Story</a>
         </div>
       </header>
       <!-- Slideshow container -->
@@ -50,15 +50,21 @@
             <img src="./images/icon.svg" alt="" class="titleImg" />
           </div>
           <div class="mySlides fade">
-            <img src="./images/woman-with-kids.svg" style="width: 100%" />
+            <img
+              src="./images/mother-speaking-to-her-child.jpg"
+            />
           </div>
 
           <div class="mySlides fade">
-            <img src="./images/naima.jpg" style="width: 100%" />
+            <img
+              src="./images/father-speaking-to-his-son.jpeg"
+            />
           </div>
 
           <div class="mySlides fade">
-            <img src="./images/naima.jpg" style="width: 100%" />
+            <img
+              src="./images/father-yelling-at-his-kid.jpeg"
+            />
           </div>
 
           <!-- The dots/circles -->
@@ -74,34 +80,37 @@
       <!--end of slide show-->
       <footer class="">
         <div id="amplitude-player">
-                    <div id="amplitude-left">
-                      <div id="player-left-bottom">
-                        <div id="control-container">
-                          <div id="central-control-container">
-                            <div id="central-controls">
-                              <div id="prev-container">
-                                <div class="amplitude-prev" id="previous"></div>
-                              </div>
-                              <div id="play-pause-container">
-                                <div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
-                              </div>
-                              <div id="next-container">
-                                <div class="amplitude-next" id="next"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
+          <div id="amplitude-left">
+            <div id="player-left-bottom">
+              <div id="control-container">
+                <div id="central-control-container">
+                  <div id="central-controls">
+                    <div id="prev-container">
+                      <div class="amplitude-prev" id="previous"></div>
                     </div>
+                    <div id="play-pause-container">
+                      <div
+                        class="amplitude-play-pause"
+                        amplitude-main-play-pause="true"
+                        id="play-pause"
+                      ></div>
+                    </div>
+                    <div id="next-container">
+                      <div class="amplitude-next" id="next"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="time-container" dir="ltr">
             <span class="current-time">
               <span
                 class="amplitude-current-time"
                 amplitude-main-current-time="true"
-              ></span>
-            </span>/
+              ></span> </span
+            >/
             <span class="duration">
               <span
                 class="amplitude-duration-time"
@@ -115,21 +124,19 @@
             ></progress>
           </div>
 
-
           <div class="volume">
             <div id="menu-container">
               <div id="share" onclick="openShare()"></div>
             </div>
-          
+
             <div id="volume-container">
-              <div class="amplitude-mute">
-              </div>
+              <div class="amplitude-mute"></div>
             </div>
-            <input type="range" name="" class="amplitude-volume-slider">
+            <input type="range" name="" class="amplitude-volume-slider" />
           </div>
 
           <div id="source">
-            Source: 
+            Source:
             <a id="link2source" href="" title="Source for this audio"
               ><span
                 class="source"
@@ -137,7 +144,6 @@
                 amplitude-main-song-info="true"
               ></span
             ></a>
-
 
             <script>
               document.getElementById("link2source").onclick = function () {
