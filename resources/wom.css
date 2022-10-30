@@ -14,7 +14,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+a{
+  text-decoration: none;
+}
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -166,6 +168,17 @@ header.header {
   margin: 0 auto;
   margin-bottom: 30px;
   background-color: rgba(149, 156, 160, 1);
+}
+#source{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.source{
+  margin-left: 5px;
+  color: #bdd4de;
+
 }
 
 @media only screen and (max-width: 980px) {

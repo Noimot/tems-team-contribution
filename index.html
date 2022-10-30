@@ -72,13 +72,40 @@
       <hr class="divider" />
 
       <!--end of slide show-->
-      <footer class="player">
+      <footer class="">
         <div id="amplitude-player">
+                    <div id="amplitude-left">
+                      <div id="player-left-bottom">
+                        <div id="control-container">
+                          <div id="central-control-container">
+                            <div id="central-controls">
+                              <div id="prev-container">
+                                <div class="amplitude-prev" id="previous"></div>
+                              </div>
+                              <div id="play-pause-container">
+                                <div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
+                              </div>
+                              <div id="next-container">
+                                <div class="amplitude-next" id="next"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+
           <div class="time-container" dir="ltr">
             <span class="current-time">
               <span
                 class="amplitude-current-time"
                 amplitude-main-current-time="true"
+              ></span>
+            </span>/
+            <span class="duration">
+              <span
+                class="amplitude-duration-time"
+                amplitude-main-duration-time="true"
               ></span>
             </span>
             <progress
@@ -86,51 +113,23 @@
               id="song-played-progress"
               amplitude-main-song-played-progress="true"
             ></progress>
-            <span class="duration">
-              <span
-                class="amplitude-duration-time"
-                amplitude-main-duration-time="true"
-              ></span>
-            </span>
           </div>
 
-          <div id="amplitude-left">
-            <div id="player-left-bottom">
-              <div id="control-container">
-                <div id="central-control-container">
-                  <div id="central-controls">
-                    <div id="prev-container">
-                      <div class="amplitude-prev" id="previous"></div>
-                    </div>
-                    <div id="play-pause-container">
-                      <div
-                        class="amplitude-play-pause"
-                        amplitude-main-play-pause="true"
-                        id="play-pause"
-                      ></div>
-                    </div>
-                    <div id="next-container">
-                      <div class="amplitude-next" id="next"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="meta-container">
-                <span
-                  amplitude-song-info="name"
-                  id="song-name"
-                  amplitude-main-song-info="true"
-                ></span>
+
+          <div class="volume">
+            <div id="menu-container">
+              <div id="share" onclick="openShare()"></div>
+            </div>
+          
+            <div id="volume-container">
+              <div class="amplitude-mute">
               </div>
             </div>
-          </div>
-
-          <div id="menu-container">
-            <div id="share" onclick="openShare()"></div>
+            <input type="range" name="" class="amplitude-volume-slider">
           </div>
 
           <div id="source">
-            Source:
+            Source: 
             <a id="link2source" href="" title="Source for this audio"
               ><span
                 class="source"
@@ -138,6 +137,7 @@
                 amplitude-main-song-info="true"
               ></span
             ></a>
+
 
             <script>
               document.getElementById("link2source").onclick = function () {
