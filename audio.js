@@ -1,53 +1,33 @@
 Amplitude.init({
    "songs":[
       {
-         "name":"Stress Management - Building Awareness",
-         "url":"./audio/Building_Awareness.mp3",
-         "source": "World Health Organization",
-         "source_url": "https://www.who.int/publications/i/item/9789240003927"
+         "name":"How to talk to your kids",
+         "url":"./audio/how_to_talk_to_your_kids_yoruba.aac",
+         "source": "Positive Parenting",
+         "source_url": "https://www.positiveparentingsolutions.com/parenting/positive-parenting-techniques",
+         "category": "yoruba"
       },
       {
-         "name":"Stress Management - Grounding Exercise 1",
-         "url":"./audio/Grounding_Exercise_1.mp3",
-         "source": "World Health Organization",
-         "source_url": "https://www.who.int/publications/i/item/9789240003927"
+         "name":"How to talk to your kids",
+         "url":"./audio/how_to_talk_to_your_kids.aac",
+         "source": "Positive Parenting",
+         "source_url": "https://www.positiveparentingsolutions.com/parenting/positive-parenting-techniques",
+         "category": "english"
       },
       {
-         "name":"Stress Management - Grounding Exercise 2",
-         "url":"./audio/Grounding_Exercise_2.mp3",
-         "source": "World Health Organization",
-         "source_url": "https://www.who.int/publications/i/item/9789240003927"
+         "name":"Teaching good manners to children",
+         "url":"./audio/teaching_good_manners_to_children_yoruba.aac",
+         "source": "Bright Horizons",
+         "source_url": "https://www.brighthorizons.com/resources/Article/do-manners-matter",
+         "category": "yoruba"
       },
       {
-         "name":"Stress Management - Grounding Exercise 3",
-         "url":"./audio/Grounding_Exercise_3.mp3",
-         "source": "World Health Organization",
-         "source_url": "https://www.who.int/publications/i/item/9789240003927"
+         "name":"Teaching good manners to children",
+         "url":"./audio/teaching_good_manners_to_children.aac",
+         "source": "Bright Horizons",
+         "source_url": "https://www.brighthorizons.com/resources/Article/do-manners-matter",
+         "category": "yoruba"
       },
-      {
-         "name":"Stress Management - Notice and Name",
-         "url":"./audio/Notice_and_Name.mp3",
-         "source": "World Health Organization",
-         "source_url": "https://www.who.int/publications/i/item/9789240003927"
-      },
-      {
-         "name":"Stress Management - Unhooking from Unkind Thoughts",
-         "url":"./audio/Unhooking_from_Unkind_Thoughts.mp3",
-         "source": "World Health Organization",
-         "source_url": "https://www.who.int/publications/i/item/9789240003927"
-      },
-      {
-         "name":"Stress Management - Making Room",
-         "url":"./audio/Making_Room.mp3",
-         "source": "World Health Organization",
-         "source_url": "https://www.who.int/publications/i/item/9789240003927"
-      },
-      {
-         "name":"Stress Management - Being Kind to Yourself",
-         "url":"./audio/Being_kind_to_yourself.mp3",
-         "source": "World Health Organization",
-         "source_url": "https://www.who.int/publications/i/item/9789240003927"
-      },
-  
+      
    ]
 });

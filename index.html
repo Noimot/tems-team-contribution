@@ -31,11 +31,8 @@
         </a>
       </div> -->
       <header class="header">
-        <div class="headerImg"><img src="./images/logo.png" alt=""></div>
+        <div class="headerImg"><img src="./images/mems-logo.svg" alt=""></div>
         <div class="ourStoryWrapper">
-			<!-- google translate -->
-		<div id="google_translate_element"></div>
-
           <select name="language" id="">
             <option value="">Language</option>
 			<option value="yoruba">Yoruba</option>
@@ -75,68 +72,84 @@
       <hr class="divider" />
 
       <!--end of slide show-->
-      
-	  		<!--Audio player-->
-		<div id="amplitude-player">
-			<div id="amplitude-left">
-				<div id="player-left-bottom">
-					<div id="control-container">
-						<div id="central-control-container">
-							<div id="central-controls">
-								<div id="prev-container">
-									<div class="amplitude-prev" id="previous"></div>
-								</div>
-								<div id="play-pause-container">
-									<div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause">
-									</div>
-								</div>
-								<div id="next-container">
-									<div class="amplitude-next" id="next"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		
-		
-			<div class="time-container" dir="ltr">
-				<span class="current-time">
-					<span class="amplitude-current-time" amplitude-main-current-time="true"></span>/</span>
-				<span class="duration">
-					<span class="amplitude-duration-time" amplitude-main-duration-time="true"></span> </span>
-				<progress class="amplitude-song-played-progress" id="song-played-progress"
-					amplitude-main-song-played-progress="true">
-				</progress>
-			</div>
-		
-			<div class="volume">
-				<div id="menu-container">
-					<div id="share" onclick="openShare()"></div>
-				</div>
-		
-				<div id="volume-container">
-					<div class="amplitude-mute">
-					</div>
-				</div>
-				<input type="range" name="" class="amplitude-volume-slider">
-			</div>
-		
-		</div>
+      <footer class="player">
+        <div id="amplitude-player">
+          <div class="time-container" dir="ltr">
+            <span class="current-time">
+              <span
+                class="amplitude-current-time"
+                amplitude-main-current-time="true"
+              ></span>
+            </span>
+            <progress
+              class="amplitude-song-played-progress"
+              id="song-played-progress"
+              amplitude-main-song-played-progress="true"
+            ></progress>
+            <span class="duration">
+              <span
+                class="amplitude-duration-time"
+                amplitude-main-duration-time="true"
+              ></span>
+            </span>
+          </div>
+
+          <div id="amplitude-left">
+            <div id="player-left-bottom">
+              <div id="control-container">
+                <div id="central-control-container">
+                  <div id="central-controls">
+                    <div id="prev-container">
+                      <div class="amplitude-prev" id="previous"></div>
+                    </div>
+                    <div id="play-pause-container">
+                      <div
+                        class="amplitude-play-pause"
+                        amplitude-main-play-pause="true"
+                        id="play-pause"
+                      ></div>
+                    </div>
+                    <div id="next-container">
+                      <div class="amplitude-next" id="next"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="meta-container">
+                <span
+                  amplitude-song-info="name"
+                  id="song-name"
+                  amplitude-main-song-info="true"
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <div id="menu-container">
+            <div id="share" onclick="openShare()"></div>
+          </div>
+
+          <div id="source">
+            Source:
+            <a id="link2source" href="" title="Source for this audio"
+              ><span
+                class="source"
+                amplitude-song-info="source"
+                amplitude-main-song-info="true"
+              ></span
+            ></a>
+
+            <script>
+              document.getElementById("link2source").onclick = function () {
+                var sourcelink = Amplitude.getActiveSongMetadata().source_url;
+                window.open(sourcelink);
+              };
+            </script>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
-
-  <!-- Javascript for google translate -->
-  <script type="text/javascript">
-	function googleTranslateElementInit() {
-		new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-	}
-</script>
-
-<script type="text/javascript"
-	src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-	<!-- End of javascript for google translate -->
-
 
   <script id="rendered-js" type="text/javascript" src="./audio.js"></script>
 
