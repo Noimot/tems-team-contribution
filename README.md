@@ -1,6 +1,6 @@
 # About Ladder
 Ladder is an Open Platform for accessible information for kids and young adults. This is a project of the [Open Source for equality](https://www.oseq.org/), it is a global initiative to promote the development and use of free and open source software that bridges gender gap.
-	Ladder WebApp was built to make audio information accessible to marginalized populations using urls(hostedsitelink.com) and using Qr Codes.
+	Ladder WebApp was built to make audio information accessible to marginalized populations using urls(https://team-mems-ladder-libary.netlify.app/index.html) and using Qr Codes.
 	It was built using the [wom.fm](https://github.com/OSEQorg/WOM.fm-Sandbox) template, which is also based on the open source [Amplitude.js](https://521dimensions.com/open-source/amplitudejs/docs)  JavaScript library which included the main functionality needed to build Ladder webApp.
 
 ## Our Target Audience
@@ -16,8 +16,7 @@ Our target audience are children of age 5 to 18 years and parents.
 
 ## Features of Ladder WebApp
 The main feature of the webapp is the audio player which is available in English, Igbo and Yoruba.
-
-![IMG_20221031_144449](https://user-images.githubusercontent.com/47542166/199025366-ed14ce98-69b2-4186-892b-cfb9a661b791.jpg)
+![ladder-web](https://user-images.githubusercontent.com/47542166/199079201-60e06abb-6575-407f-a9d5-6fe5849661b7.jpg)
 
 It can be easily accessed on a mobile device and a laptop.
 
