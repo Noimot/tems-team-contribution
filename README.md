@@ -1,14 +1,30 @@
-# WOM.fm-Sandbox
+# About Ladder
+Ladder is an Open Platform for accessible information for kids and young adults. This is a project of the [Open Source for equality](https://www.oseq.org/), it is a global initiative to promote the development and use of free and open source software that bridges gender gap.
+	Ladder WebApp was built to make audio information accessible to marginalized populations using urls(hostedsitelink.com) and using Qr Codes.
+	It was built using the wom.fm template, which is also based on the open source [Amplitude.js]()  JavaScript library which included the main functionality needed to build Ladder webApp.
 
-This is a template repository for [WOM.fm](https://wom.fm). Template repositories let users generate new repositories with the same directory structure and files. It can serve as a sandbox for the development of an audio web application that can be used by local organizations to make vital knowledge and practical information accessible to marginalized, often illiterate populations. You can use the template to create an identical repository on your own GitHub account to play and learn. 
+Our Target Audience
+Our target audience are children of age 5 to 18 years and parents.
 
-You can check out the final app by clicking [here](https://oseqorg.github.io/WOM.fm-Sandbox/). (Which gives you this repository published using [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source)).
+What We Intend to Achieve
+To educate kids in marginalized environments to be a better version of themselves and not what society makes them out to be.
+Help kids build their self confidence as it is an essential key to success.
+Educate parents on how their words leave a lasting impact on their kids.
 
-If you have an account on GitHub, you can start using the template by clicking the button below.
+About our Focus Organization
+Evolufy is a Non-Governmental organization that provides a platform for children and youths to be nurtured, with access to resources, expertise to support their growth and vision in Africa at large. They also provide support for their general wellbeing, this is achieved by providing mentorship and education, through workshops, training and community engagements. An in-depth interview with the founder can be seen here.
 
-[<img width="150" alt="use-this" src="https://user-images.githubusercontent.com/32398058/180222451-79803087-fa71-4afa-8eb7-5944aa263712.png">](https://github.com/OSEQorg/WOM.fm-Sandbox/generate)
+Features of Ladder WebApp
+The main feature of the webapp is the audio player which is available in English, Igbo and Yoruba.
 
 
-If you need additional information about using templates you can [click here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+It can be easily accessed on a mobile device and a laptop.
+
+Additional Resources
+Audiopedia gives you access to other topics you would love to know more about.
+
+Future Additions
+Visual Illustrations of audio
+Make Audio available in more languages
 
 
