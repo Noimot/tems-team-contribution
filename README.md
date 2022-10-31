@@ -24,7 +24,7 @@ It can be easily accessed on a mobile device and a laptop.
 [Audiopedia](https://www.audiopedia.org/) gives you access to other topics you would love to know more about.
 
 ## Future Additions
-Visual Illustrations of audio
-Make Audio available in more languages
+* Visual Illustrations of audio
+* Make Audio available in more languages
 
 
