@@ -26,7 +26,14 @@ Amplitude.init({
          "url":"./audio/teaching_good_manners_to_children.aac",
          "source": "Bright Horizons",
          "source_url": "https://www.brighthorizons.com/resources/Article/do-manners-matter",
-         "category": "yoruba"
+         "category": "english"
+      },
+      {
+         "name":"Teaching good manners to children",
+         "url":"./audio/teaching_good_manners_to_children_igbo.aac",
+         "source": "Bright Horizons",
+         "source_url": "https://www.brighthorizons.com/resources/Article/do-manners-matter",
+         "category": "igbo"
       },
       
    ]
