@@ -558,6 +558,23 @@ footer {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .hide {
+    display: none;
+  }
+  section .aside1 {
+    flex: 1;
+    /* width: 100%; */
+  }
+  section .aside2 {
+    flex: 0;
+  }
+  .my-story-content {
+    padding-right: 8%;
+    text-align: justify;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .text {
     font-size: 18px;
