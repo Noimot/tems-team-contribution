@@ -13,6 +13,20 @@ const englishList = {
          source: "Bright Horizons (English)",
          source_url: "https://www.brighthorizons.com/resources/Article/do-manners-matter",
          category: "english",
+      },
+      {
+         name: "Good habits for kids",
+         url: "./audio/good_habits_for_kids.m4a",
+         source: "CUEMATH (English)",
+         source_url: "https://www.cuemath.com/learn/good-habits-for-kids/",
+         category: "english",
+      },
+      {
+         name: "Hygiene habits for kids",
+         url: "./audio/hygiene_habits_for_kids.aac",
+         source: "Healthline (English)",
+         source_url: "https://www.healthline.com/health/hygiene-habits-kids",
+         category: "english",
       }
    ]
 };
