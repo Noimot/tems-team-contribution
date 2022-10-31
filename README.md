@@ -29,5 +29,5 @@ It can be easily accessed on a mobile device and a laptop.
 * Visual Illustrations of audio
 * Make Audio available in more languages
 
-<img src="https://user-images.githubusercontent.com/47542166/199103772-a3df4cfa-e281-4790-a519-360ff1711a74.png" width="100%" height="700">
+<img src="https://user-images.githubusercontent.com/47542166/199103772-a3df4cfa-e281-4790-a519-360ff1711a74.png" width="700" height="700">
 
