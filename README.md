@@ -16,8 +16,8 @@ Our target audience are children of age 5 to 18 years and parents.
 
 ## Features of Ladder WebApp
 The main feature of the webapp is the audio player which is available in English, Igbo and Yoruba.
-![My Remote](https://drive.google.com/file/d/16D296Ucb9evKx8lfPMQ-rHETnmGjfrX8/view?usp=drivesdk)
 
+![IMG_20221031_144449](https://user-images.githubusercontent.com/47542166/199025366-ed14ce98-69b2-4186-892b-cfb9a661b791.jpg)
 
 It can be easily accessed on a mobile device and a laptop.
 
