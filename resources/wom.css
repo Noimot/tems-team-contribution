@@ -100,6 +100,7 @@ header.header {
   justify-content: center;
   gap: 15px;
   height: 60px;
+  padding: 10px;
   margin: 15px 0;
 }
 
@@ -171,6 +172,7 @@ header.header {
 }
 #source {
   color: white;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,20 +185,18 @@ header.header {
 /* Player Styles */
 
 div#amplitude-player {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 2rem;
+  gap: 1rem;
+    flex-wrap: wrap;
+  justify-content: center;
   background-color: #1d272c;
   align-items: center;
 }
 
 div#share {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   background: url("../images/share.png") no-repeat;
   background-size: contain;
@@ -246,8 +246,8 @@ progress[value]::-webkit-progress-value {
 
 div#volume-container div.amplitude-mute {
   cursor: pointer;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 div#volume-container div.amplitude-mute.amplitude-not-muted {
   background: url("../images/unmute.png");
@@ -316,70 +316,41 @@ input[type="range"].amplitude-volume-slider::-ms-track {
   border-width: 15px 0;
 }
 
-div#amplitude-left
-  div#player-left-bottom
-  div#control-container
-  div#central-control-container
-  div#central-controls {
+div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-div#amplitude-left
-  div#player-left-bottom
-  div#control-container
-  div#central-control-container
-  div#central-controls
-  div#previous {
+div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#previous {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   background: url("../images/previous.png") no-repeat;
   background-size: contain;
 }
 
-div#amplitude-left
-  div#player-left-bottom
-  div#control-container
-  div#central-control-container
-  div#central-controls
-  div#play-pause {
-  width: 40px;
-  height: 40px;
+div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#play-pause {
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   margin: 0 10px;
 }
 
-div#amplitude-left
-  div#player-left-bottom
-  div#control-container
-  div#central-control-container
-  div#central-controls
-  div#play-pause.amplitude-paused {
+div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#play-pause.amplitude-paused {
   background: url("../images/play.png") no-repeat;
   background-size: contain;
 }
 
-div#amplitude-left
-  div#player-left-bottom
-  div#control-container
-  div#central-control-container
-  div#central-controls
-  div#play-pause.amplitude-playing {
+div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#play-pause.amplitude-playing {
   background: url("../images/pause-circle.png") no-repeat;
   background-size: contain;
 }
 
-div#amplitude-left
-  div#player-left-bottom
-  div#control-container
-  div#central-control-container
-  div#central-controls
-  div#next {
-  width: 30px;
-  height: 30px;
+div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#next {
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   background: url("../images/next.png") no-repeat;
   background-size: contain;
@@ -398,39 +369,23 @@ div#amplitude-left
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 2rem 2rem;
-    gap: 1em;
+    gap: 0.5em;
   }
 
   progress.amplitude-song-played-progress {
     width: 250px;
   }
 
-  div#amplitude-left
-    div#player-left-bottom
-    div#control-container
-    div#central-control-container
-    div#central-controls
-    div#previous {
+  div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#previous {
     width: 50px;
     height: 50px;
   }
 
-  div#amplitude-left
-    div#player-left-bottom
-    div#control-container
-    div#central-control-container
-    div#central-controls
-    div#play-pause {
+  div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#play-pause {
     width: 60px;
     height: 60px;
   }
-  div#amplitude-left
-    div#player-left-bottom
-    div#control-container
-    div#central-control-container
-    div#central-controls
-    div#next {
+  div#amplitude-left div#player-left-bottom div#control-container div#central-control-container div#central-controls div#next {
     width: 50px;
     height: 50px;
   }
@@ -477,17 +432,17 @@ section .heading {
 .my-story-content {
   padding-left: 10%;
   display: flex;
-  position: relative;;
+  position: relative;
   gap: 10px;
 }
 
 section .aside1 {
-	flex: 0.5;
-  }
+  flex: 0.5;
+}
 
-  section .aside2 {
-	flex: 0.5;
-  }
+section .aside2 {
+  flex: 0.5;
+}
 
 section p {
   font-family: "Campton-light";
@@ -503,140 +458,133 @@ section p {
   gap: 30px;
 }
 
-footer.footer {
+footer {
+   position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
   text-align: center;
-  padding: 30px;
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  font-family: "Campton";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 150%;
-  color: #2b3a42;
+  background-color: #1d272c;
 }
 
 .imgWrapper {
-	display: flex;
+  display: flex;
 }
 
 .imgContainer {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .imgContainer img.img {
-width: 100%;
-height: 80%;
+  width: 100%;
+  height: 80%;
 }
 
 .abs {
-	position: absolute;
-	right: 18%;
+  position: absolute;
+  right: 18%;
 }
 
 .imgDiv {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-
 @media only screen and (max-width: 980px) {
-	.text {
-	  font-size: 25px;
-	}
+  .text {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  section .aside p {
+    font-size: 16px;
   }
 
-  @media only screen and (max-width: 900px) {
-	section .aside p {
-		font-size: 16px;
-	  }
-	  
-	  .paragraph {
-		gap: 20px;
-	  }
-	  section .heading {
-		font-size: 30px;
-	  }
-	  footer.footer {
-		font-size: 30px;
-	  }
-	  
+  .paragraph {
+    gap: 20px;
+  }
+  section .heading {
+    font-size: 30px;
+  }
+  footer.footer {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hidden {
+    display: none;
+  }
+  section .aside1 {
+    flex: 0.7;
   }
 
-  @media only screen and (max-width: 800px) {
-	.hidden {
-		display:none;
-	}
-	section .aside1 {
-		flex: 0.7;
-	  }
+  section .aside2 {
+    flex: 0.3;
+  }
+  .abs {
+    right: 22%;
+  }
+}
 
-	  section .aside2 {
-		flex: 0.3;
-	  }
-	  .abs {
-		right: 22%;
-	  }
+@media only screen and (max-width: 680px) {
+  .text {
+    font-size: 20px;
   }
-  
-  @media only screen and (max-width: 680px) {
-	.text {
-	  font-size: 20px;
-	}
-	img.titleImg {
-	  height: 60px;
-	}
-	.headerImg {
-	  max-width: 150px;
-	  width: 100%;
-	}
-  
-	.headerImg  img {
-	  width: 100%;
-	}
-	section .heading {
-		font-size: 20px;
-	  }
-	  footer.footer {
-		font-size: 20px;
-	  }
-	  
+  img.titleImg {
+    height: 60px;
   }
-  
-  @media only screen and (max-width: 600px) {
-	.text {
-	  font-size: 18px;
-	}
-	img.titleImg {
-	  height: 40px;
-	}
+  .headerImg {
+    max-width: 150px;
+    width: 100%;
   }
-  
-  @media only screen and (max-width: 480px) {
-	.text {
-	  font-size: 14px;
-	}
-	.headerImg {
-	  width: 100px;
-	}
-  
-	.ourStoryWrapper select {
-	  font-size: 14px;
-	}
-  
-	.ourStoryWrapper > a {
-	  font-size: 14px;
-	  padding-left: 10px;
-	  padding-right: 10px;
-	}
-	  footer.footer {
-		font-size: 16px;
-	  }
-  }
-  
 
+  .headerImg img {
+    width: 100%;
+  }
+  section .heading {
+    font-size: 20px;
+  }
+  footer.footer {
+    font-size: 20px;
+  }
+}
 
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 18px;
+  }
+  img.titleImg {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .text {
+    font-size: 14px;
+  }
+  .headerImg {
+    width: 100px;
+  }
+
+  .ourStoryWrapper select {
+    font-size: 14px;
+  }
+
+  .ourStoryWrapper > a {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  footer.footer {
+    font-size: 16px;
+  }
+}
